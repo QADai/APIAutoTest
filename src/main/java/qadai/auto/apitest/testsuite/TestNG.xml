@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+    	<class name="qadai.auto.apitest.testHttpBin"/>
+    	<class name="qadai.auto.apitest.testLocalServer"/>
+    </classes>
+  </test> 
+	<listeners>
+		<listener class-name="qadai.auto.apitest.log.CustomListener"/>
+		<listener class-name="qadai.auto.apitest.report.TestNGIReporterListener" />
+		<listener class-name="qadai.auto.apitest.testsuite.TestListener"/>
+		<listener class-name="qadai.auto.apitest.testsuite.RetryListener"/>
+    </listeners>
+
+  
+</suite> 
